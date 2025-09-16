@@ -13,7 +13,7 @@ RENAME TABLE users to customers;
 RENAME TABLE customers to users;
 
 
---------------------------------Altering the table---------------------------------
+--------------------------------Altering the table-----------------------------
 --  You can use ALTER TABLE to modify an existing table 
 
 -- Add column
@@ -26,7 +26,7 @@ ALTER TABLE users DROP COLUMN is_active;
 ALTER TABLE user MODIFY COLUMN name VARCHAR(200); 
 
 
---------------------------------Move a Column position-------------------------------
+--------------------------Move a Column position---------------------------
 
 -- To move a column (e.g. email ) to the after id: 
 ALTER TABLE users MODIFY COLUMN email VARCHAR(100) AFTER id;
