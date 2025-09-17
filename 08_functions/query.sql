@@ -71,4 +71,8 @@ SELECT id, MOD(id, 2) AS remainder FROM users;
 SELECT name, IF(gender='Female', 'Yes', 'No') AS is_female FROM users;
 
 
+-- Find the second highest salary from the employees table.
+SELECT MAX(salary) AS second_highest_salary
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
 
